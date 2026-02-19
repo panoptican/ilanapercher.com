@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Ilana Michele Percher, Ph.D.</title>
+  <desc id="desc">Experimental condensed matter physicist</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6f4ef"/>
+      <stop offset="100%" stop-color="#ebe7de"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#c7c0b0" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <g opacity="0.2" fill="none" stroke="#6f6d67" stroke-width="2">
+    <path d="M120 456 C220 320, 390 352, 470 250 C530 178, 600 166, 660 240 C720 318, 840 308, 990 170"/>
+    <path d="M120 478 C240 340, 380 374, 495 282 C565 226, 628 222, 686 290 C748 364, 878 334, 1020 208"/>
+  </g>
+
+  <g fill="#1f2531">
+    <text x="96" y="308" font-size="66" font-family="'Times New Roman', Georgia, serif" letter-spacing="0.8">
+      Ilana Michele Percher, Ph.D.
+    </text>
+    <text x="96" y="360" font-size="28" font-family="'Courier New', 'SFMono-Regular', Menlo, monospace" letter-spacing="1.2" opacity="0.85">
+      Experimental Condensed Matter Physicist
+    </text>
+  </g>
+</svg>
