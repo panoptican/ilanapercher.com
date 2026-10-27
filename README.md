@@ -8,11 +8,12 @@ Single-page resume site for Ilana M. Percher.
 npx wrangler pages deploy . --project-name ilanapercher-com
 ```
 
-## Automatic Deploys (GitHub Actions)
+## Automatic Deploys (Cloudflare Pages Git Integration)
 
-Pushes to `main` auto-deploy via `.github/workflows/deploy-pages.yml`.
+Connect this repository directly in Cloudflare Pages. Pushes to `main` then deploy automatically from Cloudflare.
 
-Add these repository secrets in GitHub:
+Recommended Cloudflare Pages project settings for this repo:
 
-- `CLOUDFLARE_API_TOKEN` (Pages write permission)
-- `CLOUDFLARE_ACCOUNT_ID` (Cloudflare account id)
+- Framework preset: `None`
+- Build command: *(leave empty)*
+- Build output directory: `.`
