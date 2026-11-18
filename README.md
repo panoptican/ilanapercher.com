@@ -2,18 +2,6 @@
 
 Single-page resume site for Ilana M. Percher.
 
-## Deploy
+## Deployment
 
-```bash
-npx wrangler pages deploy . --project-name ilanapercher-com
-```
-
-## Automatic Deploys (Cloudflare Pages Git Integration)
-
-Connect this repository directly in Cloudflare Pages. Pushes to `main` then deploy automatically from Cloudflare.
-
-Recommended Cloudflare Pages project settings for this repo:
-
-- Framework preset: `None`
-- Build command: *(leave empty)*
-- Build output directory: `.`
+The site is the Cloudflare Worker `ilanapercher-com`, set up in `wrangler.jsonc`. Cloudflare publishes only `public/`, at `ilanapercher.com`. The GitHub repository is connected through Workers Builds, so pushing to `main` deploys, and every other branch gets a preview URL.

@@ -1,0 +1,3 @@
+# Permanent redirects to each page's clean address.
+/index.html / 308
+/index / 308

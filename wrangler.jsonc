@@ -1,0 +1,19 @@
+// Cloudflare deploy: the ilanapercher-com Worker. Cloudflare serves public/ as it is.
+// There is no Worker code.
+// Workers Builds deploys on push to main.
+{
+  "name": "ilanapercher-com",
+  "compatibility_date": "2026-11-18",
+  "assets": {
+    "directory": "./public",
+    "html_handling": "auto-trailing-slash",
+    // Answer a missing path with 404.html and a 404 status.
+    "not_found_handling": "404-page"
+  },
+  "workers_dev": true,
+  // Branch builds get their own workers.dev address to try before merging.
+  // `wrangler preview` needs the previews block; empty means a branch preview
+  // uses the same settings.
+  "preview_urls": true,
+  "previews": {}
+}
