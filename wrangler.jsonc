@@ -10,7 +10,10 @@
     // Answer a missing path with 404.html and a 404 status.
     "not_found_handling": "404-page"
   },
-  "workers_dev": true,
+  // The Worker is the origin for the whole hostname. Cloudflare keeps the DNS
+  // record and certificate for it. www redirects here through a zone rule.
+  "routes": [{ "pattern": "ilanapercher.com", "custom_domain": true }],
+  "workers_dev": false,
   // Branch builds get their own workers.dev address to try before merging.
   // `wrangler preview` needs the previews block; empty means a branch preview
   // uses the same settings.
